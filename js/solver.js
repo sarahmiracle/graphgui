@@ -255,7 +255,7 @@ var program = function(data) {
         timelimit = timeinter;
         while (nerkum == false) { /// piti lini while
             timelimit *= 1.1;
-            if(timelimit>100000000) break;
+            if(timelimit>1000000) break;
             for (var j = 0; j < 1; j++) {
                 nerkum = colorBipartiteGraph(m, m.length, m[0].length, timelimit);
                 if (nerkum != false) break;
@@ -267,7 +267,7 @@ var program = function(data) {
             return nerkum;
         }
 
-        return "can't find";
+        return "can\'t find";
     }
     return Run(data);
 };
